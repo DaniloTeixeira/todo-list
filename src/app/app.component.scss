@@ -1,0 +1,138 @@
+form,
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+mat-card {
+  height: 500px;
+  min-width: 350px;
+  max-width: 90vw;
+
+  border-radius: 10px;
+  background-color: #f2f3f4;
+
+  overflow-y: hidden;
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #5d6d7e;
+  font-family: fantasy;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  margin: 5px 0;
+  font-family: cursive;
+  font-size: 12px;
+  padding-left: 10px;
+  background-color: #e8f8f5;
+}
+
+.tasks-wrapper {
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.tasks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  max-height: 100%;
+}
+
+.tasks-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 40px;
+  width: 100%;
+  border-radius: 50px;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.check-container {
+  margin-right: 10px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+.check-container.checked {
+  background: #2ecc71;
+}
+
+.check-icon {
+  font-size: 22px;
+}
+
+span {
+  margin-left: 10px;
+  font-size: 12px;
+  font-family: cursive;
+  color: #34495e;
+}
+
+span.checked-span {
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: #cb4335;
+  opacity: 50%;
+}
+
+mat-icon {
+  color: #fff;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #2874a6;
+}
+
+.close-button {
+  background-color: #cb4335;
+}
+
+button {
+  border: none;
+}
+
+p {
+  font-size: 15px;
+  font-family: cursive;
+  color: #2874a6;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: lightgray;
+}
